@@ -106,9 +106,10 @@ The data was retrieved from [PHIUSIIL Phishing URL Dataset](https://archive.ics.
 
 ### 3. Full Exploratory Data Analysis (EDA) + Baseline Modeling: 
 - More distributions and visualizations! 
-- Hypothesis Testing - find which features have a statistically significant impact on the target variable 
-- Explore and evaluate relationships between different features and target variable
-- Build a preliminary Logistic Model 
+- Analyzed variance, collinearity, intercollinearity, and feature importance. 
+- Explored the preliminary Logistic Regression Model and understood Feature Importance
+- Explored the model score and and analyzed precious, recall and F1 score.
+- Discovered that the dataset might not be fit for a machine learning project because too many individual features could directly classify the target variable. 
 
 ### 4. Advanced Modeling:
 Using these models because they are most useful for categorical classification 
