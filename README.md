@@ -112,17 +112,44 @@ The data was retrieved from [PHIUSIIL Phishing URL Dataset](https://archive.ics.
 - Discovered that the dataset might not be fit for a machine learning project because too many individual features could directly classify the target variable. 
 
 ### 4. Advanced Modeling:
-Using these models because they are most useful for categorical classification 
-- Refine Logistic Model 
-- Build a Random Forest model because in a dataset with 56 features, Random Forest will allow me ot analyze feature importance
-- Build an XGBoost model because it efficiently handles both numerical and categorical features
-- Attempt to build a Neural Network 
+- Build a Decision Tree, Random Forest, and XGBoost model and find out which model performs best at baseline. 
+- Select 2 of the 3 best models and iterate to optimize the models, In this case, XGBoost and Random Forest were the 2 best models.
+- Given the high predictive power of the features, focus on the reduction of false negatives
+- Try L1 and L2 regularization for the XGBoost model and found that no regularization is needed.
+- Stress test the model by adding noise, and flipping 1% of the target variables from legitimate to phishing and vice versa
+- Attempt to build an app that will take in the URL, ask for some details about the webpage and outputs what the URL is, phishing or legitimate. 
 
 
 ## 4. Repository Navigation
 ### Notebooks
+Notebooks
 
-#### 1_DataWrangling + Prelim EDA
+01-DataWranglingPrelimEDA:
+- File will contain EDA and some form of data wrangling. The dataset was clean. 
+- Initial look into dataset
+- Cleaning missing values and analyzing distributions
+Preliminary EDA and creating workflow
+
+02-PreprocessingEDAModeling:
+- File will contain some extra EDA
+- File will show some a logistic regression model
+- Notebook will highlight feature importance and feature reduction
+- More comprehensive EDA of the target variable 
+
+03-BaselineAdvancedModels:
+- This notebook contains the baseline models for 3 advanced models
+- A Random Forest, Decision Tree, and XGBoost Model
+
+03.1-OptimizedAdvancedModeling:
+-This notebook contains the optimized models for Random Forest and XGBoost
+- Given that XGBoost was the superior model by virtue of lower false negatives, further analysis was completed
+- Looked at the impact of L1 and L2 Regularization had on XGBoost Model
+
+03.2-StressTesting:
+- Stress tested the optimal XGBoost Model
+- Analyzed its performance and exported the model 
+
+
 
 #### <br> References: 
 [1] https://smallbiztrends.com/small-business-cybersecurity/
