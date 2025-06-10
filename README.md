@@ -152,7 +152,7 @@ Preliminary EDA and creating workflow
 ### THE APPLICATION
 
 CatchPhish_app.py:
--The application is built to take in a URL and some webpage variables and then output whether or not the URL is legitimate or not. 
+- The application is built to take in a URL and some webpage variables and then output whether or not the URL is legitimate or not. 
 
 feature_extraction.py: 
 - The feature extraction is a python script built to extract all characteristics of the URL, simply by placing the URL in the textbox. 
