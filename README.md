@@ -147,9 +147,15 @@ Preliminary EDA and creating workflow
 
 03.2-StressTesting:
 - Stress tested the optimal XGBoost Model
-- Analyzed its performance and exported the model 
+- Analyzed its performance and exported the model
 
+### THE APPLICATION
 
+CatchPhish_app.py: 
+-The application built to take in a URL and some webpage variables and then output whether or not the URL is legitimate or not. 
+
+feature_extraction.py: 
+- The feature extraction is a python script built to extract all characteristics of the URL, simply by placing the URL in the textbox. 
 
 #### <br> References: 
 [1] https://smallbiztrends.com/small-business-cybersecurity/
